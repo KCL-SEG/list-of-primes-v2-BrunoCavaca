@@ -2,11 +2,18 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
-    list = []
+    prime = []
     start = 2
-    while (list.length()!=number_of_primes):
-        for value in range(2,int(start**0.5)+1):
-            if (start % value != 0):
-                list.append(start)
-        start+=1
-    return list
+    while len(prime) < number_of_primes:
+        primeTest = []
+        for i in prime:
+            print(i)
+            if start%i==0:
+                print("pass")
+                primeTest.append(start)
+        if primeTest:
+            prime += []
+        else:
+            prime += [start]
+        start += 1
+    return prime
