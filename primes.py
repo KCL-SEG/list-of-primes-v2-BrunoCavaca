@@ -21,4 +21,3 @@ def primes(number_of_primes):
     else:
         raise ValueError("Enter a valid value")
 
-print(primes(0))
